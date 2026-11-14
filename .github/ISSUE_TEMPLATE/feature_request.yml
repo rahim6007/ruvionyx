@@ -1,0 +1,29 @@
+name: Feature request
+description: Propose a user-facing capability
+title: "[FEATURE] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who has this problem and when does it occur?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: "- [ ] "
+    validations:
+      required: true
+  - type: textarea
+    id: security
+    attributes:
+      label: Security, privacy and tenant impact
+      description: Explain which data and permissions are affected.
