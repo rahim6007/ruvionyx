@@ -1,7 +1,6 @@
 name: Task
 description: Track a defined engineering or documentation task
 title: "[TASK] "
-labels: ["task"]
 body:
   - type: textarea
     id: purpose
