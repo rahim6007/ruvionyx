@@ -1,0 +1,49 @@
+name: Task
+description: Track a defined engineering or documentation task
+title: "[TASK] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What needs to be done and why?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable conditions that mean the task is complete.
+    validations:
+      required: true
+  - type: dropdown
+    id: owner_role
+    attributes:
+      label: Owner role
+      options:
+        - Project Lead / Architect
+        - Frontend Engineer
+        - Backend Engineer
+        - AI / RAG Engineer
+        - DevOps / QA Engineer
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and notes
+      description: Add blockers, dependencies, and test expectations.
+    validations:
+      required: false
